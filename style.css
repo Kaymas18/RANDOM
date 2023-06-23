@@ -69,9 +69,12 @@ body {
   background: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
   padding: 40px 0;
 }
+/*********************************************/
 .contact-me {
-  position: fixed;
+  position: static;
+  text-align: center;
   bottom: 20px;
+  z-index: 999;
   right: 20px;
   background-color: #fff;
   padding: 10px 20px;
@@ -80,13 +83,32 @@ body {
 }
 
 .contact-me a {
-  color: #333;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
   text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: glow 2s infinite alternate;
 }
 
 .contact-me i {
   margin-right: 5px;
 }
+
+/***********************************************/
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 0, 0, 0.5),
+      0 0 40px rgba(0, 0, 0, 0.3);
+  }
+}
+
 /***********************************************/
 .social-icons {
   text-align: left;
@@ -132,4 +154,104 @@ body {
 
 .social-icons a:hover {
   color: #888;
+}
+
+/***********************************************/
+.form-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+.form-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+/***********************************************/
+.form-section {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  max-width: 300px;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
 }
