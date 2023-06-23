@@ -58,7 +58,39 @@ body {
   margin-top: 20px;
 }
 
+
+.carousel-item img {
+  border: 2px solid #fff;
+  /* Add a border to the images */
+  border-radius: 5px;
+  /* Optional: Add border radius for rounded corners */
+}
+
+.additional-section {
+  background: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
+  padding: 40px 0;
+}
+.contact-me {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-me a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-me i {
+  margin-right: 5px;
+}
+/***********************************************/
 .social-icons {
+  text-align: left;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -66,6 +98,29 @@ body {
   margin-top: 20px;
   /* Add spacing between icons */
 }
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-list li:last-child {
+  margin-right: 0;
+}
+
+.social-list a {
+  color: #333;
+  text-decoration: none;
+}
+
+/***********************************************/
+
 
 .social-icons li {
   margin: 0 10px;
@@ -79,16 +134,4 @@ body {
 
 .social-icons a:hover {
   color: #888;
-}
-
-.carousel-item img {
-  border: 2px solid #fff;
-  /* Add a border to the images */
-  border-radius: 5px;
-  /* Optional: Add border radius for rounded corners */
-}
-
-.additional-section {
-  background: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
-  padding: 40px 0;
 }
