@@ -39,3 +39,9 @@ $(window).scroll(function () {
 $("#portfolioCarousel").carousel({
   interval: 3000, // Adjust the interval (in milliseconds) between slide transitions
 });
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.scrollIntoView({
+    behavior: 'smooth'
+  });
+}

@@ -59,6 +59,13 @@ body {
   height: auto;
 }
 
+.tex {
+  text-align: center;
+  text-decoration: underline;
+  color: #000000;
+  font-style: italic;
+}
+
 .text-center {
   text-align: center;
 }
@@ -87,6 +94,8 @@ body {
 /***********************************************/
 
 .carousel-inner {
+  border: solid black;
+  border-radius: 1px;
   margin-top: 20px;
 }
 
@@ -107,7 +116,7 @@ body {
 /***********************************************/
 .bottom-banner {
   background-color: #343a40;
-  padding: 20px;
+  padding: 0px;
   color: #ffffff;
 }
 
@@ -197,4 +206,39 @@ body {
   color: #888;
 }
 
+.social-icons li a:hover {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    color: #3b5998;
+    /* Facebook blue */
+  }
+
+  25% {
+    color: #c13584;
+    /* Instagram purple */
+  }
+
+  50% {
+    color: #02b875;
+    /* Medium green */
+  }
+
+  75% {
+    color: #2867b2;
+    /* LinkedIn blue */
+  }
+
+  100% {
+    color: #333;
+    /* GitHub black */
+  }
+}
+
 /***********************************************/
+a {
+  text-decoration: none;
+  color: inherit;
+}
