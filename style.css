@@ -35,6 +35,7 @@ body {
 /* Navbar styles */
 .navbar {
   margin-bottom: 20px;
+
   border: solid white;
   border-radius: 1px;
 }
